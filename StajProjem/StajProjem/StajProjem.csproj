@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0122AF23-6EBE-48C4-9B42-3DD187B1C300}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StajProjem</RootNamespace>
+    <AssemblyName>StajProjem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cAdisyon.cs" />
+    <Compile Include="cGenel.cs" />
+    <Compile Include="circularButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cMasalar.cs" />
+    <Compile Include="cMusteriler.cs" />
+    <Compile Include="cOdeme.cs" />
+    <Compile Include="cPaketler.cs" />
+    <Compile Include="cPersonelGorev.cs" />
+    <Compile Include="cPersonelHareketleri.cs" />
+    <Compile Include="cPersoneller.cs" />
+    <Compile Include="cRezervasyon.cs" />
+    <Compile Include="cSiparis.cs" />
+    <Compile Include="cUrunCesitleri.cs" />
+    <Compile Include="cUrunler.cs" />
+    <Compile Include="frmAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAyarlar.Designer.cs">
+      <DependentUpon>frmAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBill.Designer.cs">
+      <DependentUpon>frmBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasalar.Designer.cs">
+      <DependentUpon>frmMasalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriAra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriAra.Designer.cs">
+      <DependentUpon>frmMusteriAra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMutfak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMutfak.Designer.cs">
+      <DependentUpon>frmMutfak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiparis.Designer.cs">
+      <DependentUpon>frmSiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriEkleme.Designer.cs">
+      <DependentUpon>MusteriEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAyarlar.resx">
+      <DependentUpon>frmAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBill.resx">
+      <DependentUpon>frmBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasalar.resx">
+      <DependentUpon>frmMasalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriAra.resx">
+      <DependentUpon>frmMusteriAra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMutfak.resx">
+      <DependentUpon>frmMutfak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSiparis.resx">
+      <DependentUpon>frmSiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriEkleme.resx">
+      <DependentUpon>MusteriEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bosmasa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolumasa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rezervasyon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acikmasa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tatli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fastfood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corba1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makarna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makarna1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_ork1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fork %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Food_512-07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_ork2_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_eri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_ikis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_deme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_iparis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_iparis1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_ptal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_mage_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_ork_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_itchen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rezervasyon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mutfak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rapor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-clock-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cikis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hesapozet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hesapkapat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_enu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_enu1_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pixelkit-Tasty-Bites-Hamburger.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pixelkit-Tasty-Bites-Hamburger1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hamburger-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coca-Cola-Smudge-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pepsi-Can-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strawberry-cake-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chocolate-Cream-Roll-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beef-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheff-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen-icon-png-9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\53773-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen-icon-png-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-and-marketing-glyph-2-14-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\468442-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-23-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\830216-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2000px-Eat-icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\272186.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1092657-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confectionery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_479155.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\381924-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\98750-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\56614-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1083-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_eat_restaurant_fork_knife-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-1-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accept-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clockwise-arrow-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-back-1-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-interface-login-icon--12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\access-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creditcard-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-payment-type.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order-history-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62857-notebook-with-decorative-cover-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hp-notebook-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notes-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note-edit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-sign-in-a-circle_318-53198.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\07_plus-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create_with_plus_mail_layer-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-1-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-22-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-edit-redo-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-back-1-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clockwise-arrow-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users-Change-User-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy-Disk-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Editing-Delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_128089.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran Alıntısı.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran Alıntısı1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran Alıntısı2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran Alıntısı3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran AlıntısıGF.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39041_simple-wallpaper-hd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38165367-simple-wallpaper.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
